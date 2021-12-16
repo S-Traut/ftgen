@@ -1,0 +1,11 @@
+{
+  "name": "ftgen",
+  "version": "1.0.0",
+  "description": "Generate bitmap from font files such as .ttf or .otf",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "s-traut",
+  "license": "MIT"
+}
