@@ -4,8 +4,15 @@
   "description": "Generate bitmap from font files such as .ttf or .otf",
   "main": "index.js",
   "scripts": {
+    "test": "node test"
   },
+  "type": "module",
   "keywords": [],
   "author": "s-traut",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "image-data-uri": "^2.0.1",
+    "opentype.js": "^1.3.4"
+  }
 }
