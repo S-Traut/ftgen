@@ -51,7 +51,7 @@ export function generateTexture(font, str) {
 
   const texture = {
     text: str,
-    path: `${font.out}/${name}.png`,
+    path: `${font.out}${name}.png`,
     isEmpty: false,
     width: width,
     height: 80,
