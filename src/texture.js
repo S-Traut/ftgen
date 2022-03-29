@@ -1,11 +1,11 @@
-import OpenType from "opentype.js";
-import { dec2hexString } from "./utils.js";
-import ImageDataURI from "image-data-uri";
-import fs from 'fs';
-import pkg from 'canvas';
+const OpenType = require("opentype.js");
+const { dec2hexString } = require("./utils.js");
+const ImageDataURI = require("image-data-uri");
+const fs = require('fs');
+const pkg = require('canvas');
 const { createCanvas } = pkg;
 
-export function getFont(path, out) {
+function getFont(path, out) {
   try {
     const font = {
       otype: OpenType.loadSync(path),
@@ -33,7 +33,7 @@ function getName(cache, text) {
   return name;
 }
 
-export function generateTexture(font, str) {
+function generateTexture(font, str) {
 
   if (str === " ") {
     return false;
@@ -66,3 +66,5 @@ export function generateTexture(font, str) {
 
   return texture;
 }
+
+module.exports = { getFont, generateTexture };

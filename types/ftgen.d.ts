@@ -2,7 +2,7 @@ declare module "ftgen" {
   
   type Font = {
     otype: opentype.Font,
-    cache: Map,
+    cache: Map<string, string>,
     out: string,
   }
 
@@ -17,5 +17,5 @@ declare module "ftgen" {
 
   function getFont(path: string, out: string): Font;
   export function generateTexture(font: Font, str: string): Texture;
-  
+
 }
