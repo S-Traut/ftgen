@@ -5,11 +5,5 @@
   "main": "index.js",
   "keywords": ["font", "texture"],
   "author": "s-traut",
-  "license": "MIT",
-  "dependencies": {
-    "canvas": "^2.8.0",
-    "image-data-uri": "^2.0.1",
-    "opentype.js": "^1.3.4"
-  },
-  "types": "./types/ftgen.d.ts"
+  "license": "MIT"
 }
