@@ -3,7 +3,13 @@
   "version": "1.1.0",
   "description": "Generate bitmap from font files such as .ttf or .otf",
   "main": "index.js",
-  "keywords": ["font", "texture"],
+  "keywords": [
+    "font",
+    "texture"
+  ],
   "author": "s-traut",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pngjs": "^6.0.0"
+  }
 }
